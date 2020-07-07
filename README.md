@@ -34,4 +34,4 @@ ant.design [https://ant.design/](https://ant.design/)
 
 # DEMO插件调试使用
 
-![image](https://github.com/h5ds/h5ds-plugins/images/demo.png)
+![image](https://cdn.h5ds.com/doc/demo.png)
