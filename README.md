@@ -30,7 +30,7 @@ ant.design [https://ant.design/](https://ant.design/)
 
 在`Editor.js`中可以直接修改json数据（`this.props.layer`），然后执行`this.props.editor.updateCanvas()`会自动更新视图。
 
-具体可以参考插件代码：[demo插件代码](https://github.com/h5ds/h5ds-plugins/tree/master/plugins/demo)
+具体可以参考插件代码：[demo插件代码](https://h5ds-cdn.oss-cn-beijing.aliyuncs.com/doc/demo.png)
 
 # DEMO插件调试使用
 
