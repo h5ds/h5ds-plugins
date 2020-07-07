@@ -1,8 +1,9 @@
 import React from 'react';
 import './umd/editor/style.css';
 import EditorCore from './umd/editor';
-import { cleanData } from './umd/swiper';
+// import { cleanData } from './umd/swiper';
 import { storage } from './utils';
+import ImageSource from './ImageSource';
 
 // 载入插件
 import '../plugins/demo';
@@ -31,9 +32,6 @@ export default function Editor() {
     console.log(data);
   };
 
-  const ImageSource = () => {
-    return <div>图片模块</div>;
-  };
   const SoundSource = () => {
     return <div>音乐模块</div>;
   };

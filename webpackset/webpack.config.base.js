@@ -14,7 +14,7 @@ module.exports = {
     rules: [
       {
         test: /\.(woff|eot|ttf|svg)$/,
-        include: [resolve('../src'), resolve('../plugins'), resolve('../node_modules'), resolve('../example')],
+        include: [resolve('../src'), resolve('../plugins'), resolve('../node_modules')],
         use: [
           {
             loader: 'url-loader',
@@ -50,7 +50,7 @@ module.exports = {
     new CaseSensitivePathsPlugin(),
     new CopyWebpackPlugin([
       {
-        from: resolve('../example/assets'),
+        from: resolve('../src/assets'),
         to: resolve('../dist/assets'),
         toType: 'dir'
       }

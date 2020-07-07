@@ -19,7 +19,11 @@ import { mountPlugin } from 'h5ds-mount-plugin';
  */
 function LayerComp({ layer }) {
   const { data } = layer;
-  return <div className="pl-demo">{data}</div>;
+  return (
+    <div className="pl-demo" style={{ backgroundColor: data.color, backgroundImage: `url(${data.img})` }}>
+      {data.text}
+    </div>
+  );
 }
 
 // 动态载入一些外部资源
