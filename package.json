@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --config webpackset/webpack.config.dev.js --open",
     "build:editor": "webpack --config webpackset/webpack.config.editor.js --colors --display-error-details --progress",
     "build:layer": "webpack --config webpackset/webpack.config.layer.js --colors --display-error-details --progress",
-    "build": "npm run build:layer && npm run build:editor && npm run copy:plus"
+    "build": "npm run build:layer && npm run build:editor"
   },
   "repository": {
     "type": "git",

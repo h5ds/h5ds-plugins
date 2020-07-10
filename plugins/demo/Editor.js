@@ -7,7 +7,8 @@ import { Button } from 'antd';
 const icon = <i className="h5font ico-3dmoxing" />;
 
 /**
- * props: editor, layer
+ @param {object} editor 编辑器内核方法集合
+ @param {object} layer 图层数据
  */
 function Editor({ editor, layer }) {
   const onClick = () => {
