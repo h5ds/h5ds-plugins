@@ -7,6 +7,7 @@ import ImageSource from './ImageSource';
 
 // 载入插件
 import '../plugins/demo';
+import '../plugins/run-text';
 
 export default function Editor() {
   const appId = 'appid';
@@ -36,9 +37,10 @@ export default function Editor() {
     return <div>音乐模块</div>;
   };
 
+  let appData = storage.local.get('H5DS_APP_DATA');
   return (
     <EditorCore
-      data={storage.local.get('H5DS_APP_DATA') || 'defaultData'}
+      data={appData?.data || 'defaultData'}
       plugins={[]}
       options={{
         appId,

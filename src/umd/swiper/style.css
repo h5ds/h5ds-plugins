@@ -3198,6 +3198,350 @@ body * {
   text-shadow: 0 0 4px #FFF, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -25px 18px #f20;
 }
 
+/**
+*	流星雨 闪星星效果
+*/
+.h5ds-preview .layer-h5ds-css-effect {
+  pointer-events: none;
+}
+.layer-h5ds-css-effect .element {
+  overflow: hidden;
+}
+.h5ds-layerinner-csseffect {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.h5ds-layerinner-csseffect > div {
+  width: 100%;
+  height: 100%;
+}
+.h5ds-layerinner-csseffect .star {
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0 0 5px #ffffff;
+  -webkit-animation: star 1s linear infinite;
+          animation: star 1s linear infinite;
+}
+@-webkit-keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+.h5ds-layerinner-csseffect .snow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url(https://cdn.h5ds.com/static/images/snow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  -webkit-animation: snow 5s linear infinite;
+          animation: snow 5s linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes snow {
+  0% {
+    transform: rotate(0deg) translate(-10px, 0px);
+  }
+  10% {
+    transform: rotate(0deg) translate(0px, 100px);
+  }
+  20% {
+    transform: rotate(0deg) translate(10px, 200px);
+  }
+  30% {
+    transform: rotate(0deg) translate(0px, 300px);
+  }
+  40% {
+    transform: rotate(0deg) translate(10px, 400px);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 500px);
+  }
+  60% {
+    transform: rotate(0deg) translate(10px, 600px);
+  }
+  70% {
+    transform: rotate(0deg) translate(0px, 700px);
+  }
+  80% {
+    transform: rotate(0deg) translate(10px, 800px);
+  }
+  90% {
+    transform: rotate(0deg) translate(0px, 900px);
+  }
+  100% {
+    transform: rotate(0deg) translate(10px, 1000px);
+  }
+}
+@keyframes snow {
+  0% {
+    transform: rotate(0deg) translate(-10px, 0px);
+  }
+  10% {
+    transform: rotate(0deg) translate(0px, 100px);
+  }
+  20% {
+    transform: rotate(0deg) translate(10px, 200px);
+  }
+  30% {
+    transform: rotate(0deg) translate(0px, 300px);
+  }
+  40% {
+    transform: rotate(0deg) translate(10px, 400px);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 500px);
+  }
+  60% {
+    transform: rotate(0deg) translate(10px, 600px);
+  }
+  70% {
+    transform: rotate(0deg) translate(0px, 700px);
+  }
+  80% {
+    transform: rotate(0deg) translate(10px, 800px);
+  }
+  90% {
+    transform: rotate(0deg) translate(0px, 900px);
+  }
+  100% {
+    transform: rotate(0deg) translate(10px, 1000px);
+  }
+}
+.h5ds-layerinner-csseffect .movestar {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: -webkit-linear-gradient(0deg, transparent, #fff);
+  -webkit-animation: movestar 1s linear infinite;
+          animation: movestar 1s linear infinite;
+}
+@-webkit-keyframes movestar {
+  0% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(0px) scale(0.2);
+  }
+  20% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(500px) scale(1);
+  }
+}
+@keyframes movestar {
+  0% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(0px) scale(0.2);
+  }
+  20% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(500px) scale(1);
+  }
+}
+.h5ds-layerinner-csseffect .cloud {
+  height: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.h5ds-layerinner-csseffect .cloud i {
+  width: 640px;
+  height: 300px;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  z-index: 0 !important;
+  background-size: cover;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(1) {
+  background: url(https://cdn.h5ds.com/static/images/cloud1.png) no-repeat;
+  top: 50px;
+  left: -100px;
+  -webkit-animation: animationCloudBg 1s linear infinite;
+          animation: animationCloudBg 1s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(2) {
+  background: url(https://cdn.h5ds.com/static/images/cloud2.png) no-repeat;
+  top: 100px;
+  left: -50px;
+  -webkit-animation: animationCloudBg 2s linear infinite;
+          animation: animationCloudBg 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(3) {
+  background: url(https://cdn.h5ds.com/static/images/cloud3.png) no-repeat;
+  top: 150px;
+  left: 0px;
+  -webkit-animation: animationCloudBg 4s linear infinite;
+          animation: animationCloudBg 4s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(4) {
+  background: url(https://cdn.h5ds.com/static/images/cloud4.png) no-repeat;
+  top: 200px;
+  left: 50px;
+  -webkit-animation: animationCloudBg 2s linear infinite;
+          animation: animationCloudBg 2s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(5) {
+  background: url(https://cdn.h5ds.com/static/images/cloud5.png) no-repeat;
+  top: 250px;
+  left: -50px;
+  -webkit-animation: animationCloudBg 1.2s linear infinite;
+          animation: animationCloudBg 1.2s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(6) {
+  background: url(https://cdn.h5ds.com/static/images/cloud6.png) no-repeat;
+  top: 300px;
+  left: 20px;
+  -webkit-animation: animationCloudBg 3s linear infinite;
+          animation: animationCloudBg 3s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(7) {
+  background: url(https://cdn.h5ds.com/static/images/cloud1.png) no-repeat;
+  top: 350px;
+  left: 80px;
+  -webkit-animation: animationCloudBg 4.5s linear infinite;
+          animation: animationCloudBg 4.5s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(8) {
+  background: url(https://cdn.h5ds.com/static/images/cloud2.png) no-repeat;
+  top: 400px;
+  left: -10px;
+  -webkit-animation: animationCloudBg 2.8s linear infinite;
+          animation: animationCloudBg 2.8s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(9) {
+  background: url(https://cdn.h5ds.com/static/images/cloud3.png) no-repeat;
+  top: 350px;
+  left: 80px;
+  -webkit-animation: animationCloudBg 1.6s linear infinite;
+          animation: animationCloudBg 1.6s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(10) {
+  background: url(https://cdn.h5ds.com/static/images/cloud4.png) no-repeat;
+  top: 20px;
+  left: -100px;
+  -webkit-animation: animationCloudBg 4s linear infinite;
+          animation: animationCloudBg 4s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(11) {
+  background: url(https://cdn.h5ds.com/static/images/cloud5.png) no-repeat;
+  top: 60px;
+  left: 0;
+  -webkit-animation: animationCloudBg 2.5s linear infinite;
+          animation: animationCloudBg 2.5s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.h5ds-layerinner-csseffect .cloud i:nth-child(12) {
+  background: url(https://cdn.h5ds.com/static/images/cloud6.png) no-repeat;
+  top: 0;
+  left: -50px;
+  -webkit-animation: animationCloudBg 3.2s linear infinite;
+          animation: animationCloudBg 3.2s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+@-webkit-keyframes animationCloudBg {
+  0% {
+    transform: scale(0.5) translate(-300px, 300px) rotateX(0deg) rotateY(0deg);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1) translate(-80px, 80px) rotateX(20deg) rotateY(-20deg);
+    opacity: 1;
+  }
+  66% {
+    transform: scale(1.5) translate(100px, -100px) rotateX(30deg) rotateY(-10deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.8) translate(300px, -300px) rotateX(0deg) rotateY(0deg);
+    opacity: 0.6;
+  }
+}
+@keyframes animationCloudBg {
+  0% {
+    transform: scale(0.5) translate(-300px, 300px) rotateX(0deg) rotateY(0deg);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1) translate(-80px, 80px) rotateX(20deg) rotateY(-20deg);
+    opacity: 1;
+  }
+  66% {
+    transform: scale(1.5) translate(100px, -100px) rotateX(30deg) rotateY(-10deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.8) translate(300px, -300px) rotateX(0deg) rotateY(0deg);
+    opacity: 0.6;
+  }
+}
+
 .h5ds-page {
   height: 100%;
   width: 100%;
