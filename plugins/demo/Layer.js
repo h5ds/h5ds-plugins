@@ -29,7 +29,7 @@ import { mountPlugin } from 'h5ds-mount-plugin';
 function LayerComp({ layer }) {
   const { data } = layer;
   return (
-    <div className="pl-demo" style={{ backgroundColor: data.color, backgroundImage: `url(${data.img})` }}>
+    <div className="pl-demo" style={{color: data.color}}>
       {data.text}
     </div>
   );

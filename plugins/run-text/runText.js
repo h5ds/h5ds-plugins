@@ -70,6 +70,13 @@ export class RunText {
           break;
       }
 
+      if(!prevStyle.rotate) {
+        prevStyle.rotate = 0;
+      }
+      if(!style.rotate) {
+        style.rotate = 0;
+      }
+
       // 设置定位 0-90  0-270  90-180 90-0 180-90 180-270 270-180 270-0 0-0 90-90 270-270 180-180
       switch (`${prevStyle.rotate}-${style.rotate}`) {
         case '0-90':
