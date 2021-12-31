@@ -4399,3 +4399,210 @@ body .swiper-container-fade .swiper-slide-active {
   display: none !important;
 }
 
+body.h5ds-preview-app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+body .swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: initial;
+}
+.h5-app-null {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: relative;
+}
+.h5-app-null .h5-app-null-right {
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.h5-app-null .h5-app-null-tips {
+  text-align: center;
+  font-size: 20px;
+  width: 80%;
+}
+.h5-app-null .h5-app-null-tips img {
+  display: inline-block;
+  width: 100%;
+}
+.h5-app-null .h5-app-null-tips span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin: 20px 0;
+}
+.desktop {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://cdn.h5ds.com/static/images/swiper-pc-bg.jpg);
+  background-size: cover;
+}
+.desktop .desktop-scale-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.desktop .desktop-scale-btn a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  color: #fff;
+}
+.desktop .desktop-scale-btn span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  margin: 0 10px;
+}
+.desktop-inner {
+  height: 514px;
+  width: 1000px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.desktop-inner .desktop-scale {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.desktop-inner .desktop-phone {
+  width: 369px;
+  height: 682px;
+  position: relative;
+  left: 210px;
+  top: 10px;
+}
+.desktop-inner .desktop-phone .h5ds-preview-h5swiper {
+  position: relative;
+  left: 22px;
+  top: 80px;
+  border: 1px solid #e0e0e0;
+}
+.desktop-inner .desktop-horizontal-phone {
+  width: 514px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  transform: translateY(-160px);
+  left: 260px;
+}
+.desktop-inner .desktop-list {
+  width: 170px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.desktop-inner .desktop-list .view-app-small {
+  width: 134.4px;
+  height: 215.88px;
+  overflow: hidden;
+  margin: 0 10px 10px 10px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.desktop-inner .desktop-list .view-app-small .view-app-small-preview {
+  pointer-events: none;
+  width: 320px;
+  height: 514px;
+  transform: scale(0.42);
+  transform-origin: 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.desktop-inner .desktop-list .view-app-small .view-app-small-preview .h5ds-page.h5ds-page-unswiper {
+  overflow: hidden;
+}
+.desktop-inner .desktop-list-info .view-app-small {
+  width: 128.5px;
+  height: 80px;
+}
+.desktop-inner .desktop-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+}
+.desktop-inner .desktop-info .desktop-info-desc {
+  padding: 30px 0;
+  text-align: center;
+}
+.desktop-inner .desktop-info .desktop-info-desc h1 {
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #333;
+}
+.desktop-inner .desktop-info .desktop-info-desc p {
+  padding-bottom: 30px;
+  font-size: 14px;
+  color: #666;
+}
+.desktop-inner .desktop-info .desktop-qrcode p {
+  padding-top: 10px;
+  color: #666;
+}
+.desktop-inner .desktop-info .buttons {
+  position: absolute;
+  width: 20px;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+}
+.desktop-inner .desktop-info .buttons a {
+  padding: 5px 0;
+  font-size: 12px;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.desktop-inner .desktop-info .buttons span {
+  font-size: 12px;
+  display: block;
+  padding: 10px 0;
+}
+.desktop-inner .desktop-phone-bg {
+  position: absolute;
+  z-index: -1;
+  width: 369px;
+  height: 682px;
+  background: url(https://cdn.h5ds.com/static/images/phone6.png);
+}
+.desktop-inner .desktop-horizontal-phone .desktop-phone-bg {
+  transform: rotate(-90deg);
+  top: -180px !important;
+  left: 78px;
+}
+.desktop-inner .desktop-phone .desktop-phone-bg {
+  top: 0;
+}
+
